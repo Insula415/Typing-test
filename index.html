@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="mainOne()">
+<div class="container"> 
+    <div class="heading">Typing test</div> 
+    <div class="select-box">
+    <select id="selection" onchange="userOption()">
+      <option value="0">Select mode</option>
+      <option value="1">Quotes</option>
+      <option value="2">Random words</option>
+    </select>
+    </div>
+
+    <div class="quote">Click on the area below to start the game.</div>
+    <button class="button" id="startBtn">Start</button> <br>
+    <button class="button restart_btn" onclick="history.go(0); resetGame();">Reset</button>
+
+    <p id="demo"></p>
+    <textarea class="input_area" placeholder="Click here" oninput="processCurrentText()"></textarea>
+    
+    <div class="header"> 
+      <div class="wpm"> 
+        <div class="header_text">WPM</div> 
+        <div class="curr_wpm">100</div> 
+      </div> 
+      <div class="errors"> 
+        <div class="header_text">Errors</div> 
+        <div class="curr_errors">0</div> 
+      </div> 
+      <div class="accuracy"> 
+        <div class="header_text">Accuracy</div> 
+        <div class="curr_accuracy">100</div> 
+      </div> 
+      <div class="timer"> 
+        <div class="header_text">Time</div> 
+        <div class="curr_time">60s</div> 
+      </div> 
+    </div> 
+</div> 
+<script src="script.js"></script> 
+
+
+
+
+</body>
+</html>
