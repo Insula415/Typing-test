@@ -138,7 +138,7 @@ function userOption () {
   } else if (value == 1) {
     mainArray = quoteArray;
   } else if (value == 2) {
-    mainArray = randomArray; // not done yet
+    mainArray = randomArray; 
   } else {
     mainArray = quoteArray;
   } 
